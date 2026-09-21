@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup_Navoraway</title>
-</head>
-<body>
+
     <!DOCTYPE html>
 <html lang="en">
 
@@ -13,60 +6,333 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup - NAVORAWAY</title>
+    <style>
+        
+           
+        body{
+            background-color: #F7FAF8;
+            margin:0;
+        }
+         nav a:hover {
+    background-color: #0F5132;
+    color: white;
+}
+        header{
+            background-color: #173B2A;
+            color: white;
+            padding : 20px 40px;
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        nav a{
+            border: 1px solid white;
+            border-radius: 20px;
+            background-color:white;
+
+            
+
+
+            
+            color: #173B2A;
+            padding : 10px 20px;
+        
+            text-decoration: none;
+
+            
+        }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-mark {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #0F5132;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.logo-text h1 {
+    margin: 5px 0 0;
+}
+
+.logo-text p {
+    margin: 4px 0 0;
+}
+nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 30px;
+    flex-wrap: nowrap;
+}
+main{
+    background-color: white;
+    width: 700px;
+    
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 15px;
+}
+main h2 {
+    color:black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main > p {
+    text-align: center;
+    color: #555;
+}
+form label {
+    display: inline-block;
+    width: 150px;
+}
+form input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+form input:hover{
+    border-color:#0F5132;
+}
+form button {
+    background-color: #0F5132;
+    width: 400px;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form input:focus{
+    border-color: #0F5132;
+    outline: none;
+      box-shadow: 0 0 8px rgba(15, 81, 50, 0.3);
+}
+
+form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form p a {
+    color: #0F5132;
+    font-weight: bold;
+    text-decoration: none;
+}
+main {
+    background-color: white;
+    width: 1000px;
+    margin: 50px auto;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.travel-section {
+    width: 50%;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.signup-section {
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.Navora{
+    color:#0F5132;
+}
+form button:hover {
+    background-color: #173B2A;
+     transform: scale(1.02);
+}
+footer {
+    background-color: #173B2A;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.foot h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.foot h3:hover {
+    color: #5CCB8A;
+    cursor: pointer;
+}
+.foot p {
+    margin: 8px 0;
+    color: #ddd;
+}
+
+
+
+
+    </style>
 </head>
 
 <body>
 
     <header>
 
-        <h1>NAVORAWAY</h1>
-        <p>Your Way, Your Journey</p>
+    <div class="logo">
+        <div class="logo-mark">
+            N
+        </div>
+    
+
+    
+
+            <div class="logo-text">
+
+                <h1>NAVORAWAY</h1>
+
+                <p>Your Way, Your Journey</p>
+
+            </div>
+
+        </div>
 
         <nav>
-            <a href="/interface.html" target="_main">Home</a>
-            <a href="/destinations.html"target="_main">Destinations</a>
-            <a href="/about.html" target="_main">About</a>
-            <a href="/login.html" target="_main">Login</a>
+
+            <a href="/interface.html">Home</a>
+            <!-- This is a comment <a href="/destinations.html">Destinations</a>-->
+            <a href="/about.html">About</a>
+            <a href="/login.html">Login</a>
+
         </nav>
 
     </header>
+
     <main>
-        <form action="">
-            <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <div class = "travel-section"> 
 
-        <br><br>
+        </div>
+        <div class ="signup-section">
+        
+        <h2>Create Your <span class ="Navora">NAVORAWAY </span>Account</h2>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <br><br>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-
-        <br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Create a password" required>
-
-        <br><br>
-
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
-
-        <br><br>
-
-        <button type="submit">Create Account</button>
         <p>
-    Already have an account?
-    <a href="login.html">Login here</a>
-</p>
+            Start planning your perfect journey with us.
+        </p>
+
+        <form action="">
+
+            <label for="fullname">
+                Full Name:
+            </label>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <br><br>
+
+            <label for="email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <br><br>
+
+            <label for="phone">
+                Phone Number:
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <br><br>
+
+            <label for="password">
+                Password:
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                required
+            >
+
+            <br><br>
+
+            <label for="confirm-password">
+                Confirm Password:
+            </label>
+
+            <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm your password"
+                required
+            >
+
+            <br><br>
+
+            <center><button type="submit">
+                Create Account
+            </button></center>
+
+            <p>
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
         </form>
+        </div>
+
     </main>
 
+    <footer>
+        <div class = "foot">
+
+        <div><h3>NAVORAWAY</h3></div>
+
+        <p>
+            Plan smarter. Travel better.
+        </p>
+
+        <p>
+            &copy; 2026 NAVORAWAY. All rights reserved.
+        </p>
+        </div>
+
+    </footer>
+
 </body>
 
-</html>
-</body>
 </html>

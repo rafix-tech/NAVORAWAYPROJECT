@@ -4,17 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN-NAVORAWAY</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color:#F7FAF8;
+            margin : 0;
+            font-family:Arial, sans-serif;
+
+        }
+        header{
+            background-color: #173B2A;
+            color: white;
+            padding:20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+        .logo-text h1 {
+    margin: 0;
+}
+
+.logo-text p {
+    margin: 5px 0 0;
+}
+nav{
+    display: flex;
+    gap:8px;
+
+}
+
+        nav a{
+            background-color: white;
+    color: #173B2A;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+        }
+        nav a:hover {
+    background-color: #0F5132;
+    color: white;
+}
+main {
+    background-color: white;
+    width: 700px;
+    
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+form label {
+    display: inline-block;
+    width: 180px;
+}
+
+form input {
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button-container > button:first-child {
+    background-color: #0F5132;
+    color: white;
+    border: none;
+}
+
+.google-btn {
+    background-color: white;
+    color: #173B2A;
+    border: 1px solid #ccc;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+.forgot {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot a {
+    color: #0F5132;
+    text-decoration: none;
+}
+.forgot a:hover {
+    text-decoration: underline;
+}
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #0F5132;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #0F5132;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+form input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+form input:hover {
+    border-color: #0F5132;
+}
+form input:focus {
+    outline: none;
+    border-color: #0F5132;
+    box-shadow: 0 0 8px rgba(15, 81, 50, 0.3);
+}
+.button-container > button:first-child {
+    background-color: #0F5132;
+    color: white;
+    border: none;
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-container > button:first-child:hover {
+    background-color: #173B2A;
+    transform: translateY(-3px);
+}
+.button-container > button:first-child:hover {
+    background-color: #173B2A;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+.google-btn {
+    background-color: white;
+    color: #173B2A;
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.google-btn:hover {
+    background-color: #F7FAF8;
+    border-color: #0F5132;
+    transform: translateY(-2px);
+}
+.google-btn span {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 8px;
+}
+main h2 {
+    color: #173B2A;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.login-subtitle {
+    text-align: center;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+    </style>
+    
 </head>
+
 <body>
     <header>
+        <div class="logo-text">
 
     <h1>NAVORAWAY</h1>
+    
 
     <p>Your Way, Your Journey</p>
+    </div>
 
     <nav>
         <a href="/interface.html" target="_main">Home</a>
-        <a href="destinations.html" target = "_main">Destinations</a>
+        <!--<a href="destinations.html" target = "_main">Destinations</a>-->
         <a href="about.html" target="_main" >About</a>
         <a href="signup.html" target="_main">Signup</a>
     </nav>
@@ -23,6 +234,9 @@
  <main>
 
         <h2>Login to NAVORAWAY</h2>
+        <p class="login-subtitle">
+    Welcome back! Login to continue your journey.
+</p>
 
         <form>
 
@@ -35,7 +249,7 @@
                 required
             >
 
-            <br><br>
+            <br><br>            
 
             <label for="password">Password:</label>
             <input
@@ -45,10 +259,29 @@
                 placeholder="Enter your password"
                 required
             >
-
             <br><br>
 
-            <button type="submit">Login</button>
+            
+            <div class="button-container">
+
+            <button type="submit" >Login</button>
+            <div class="divider">
+    <span>OR</span>
+</div>
+
+<button class="google-btn" type ="button">
+    <span>G</span> Login with Google
+</button>
+
+</div>
+<p class="forgot">
+    <a href="#">Forgot Password?</a>
+</p>
+
+<p class="signup-link">
+    Don't have an account?
+    <a href="signup.html">Sign Up</a>
+</p>
 
         </form>
 
